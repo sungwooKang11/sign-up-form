@@ -1,50 +1,150 @@
-body {
+input:focus {
+    outline:none;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .all {
-    display: grid;
-    grid-template-columns: 342px;
-    grid-template-rows: 620px;
+    position: relative;
+    border:solid 1px green;
+    background: rgb(34, 136, 195);
+    width: 376px;
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-.firstPageDown {
-    width: 342px;
-    height: 620px;
+.firstPage {
+    position: absolute;
+    background: white;
+    width: 376px;
+    height: 580px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-
-
-
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.08);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.signUp {
-    width: 200px;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 7px;
+.firstPage.active {
+    transform: translateY(550px);
+}
+
+
+
+.create {
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.createKR {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 13px;
+    color: gray;
+}
+
+.name {
+    width: 320px;
+    height: 50px;
+    margin-bottom: 35px;
+
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+}
+  
+.email {
+    width: 320px;
+    height: 50px;
+    margin-bottom: 35px;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+}
+
+
+.pw {
+    width: 320px;
+    height: 50px;
+    margin-bottom: 35px;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+}
+
+.signUpBtn {
+    width: 320px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
     background-color: rgb(72,156,203); 
     color: white; 
     border: 2px solid rgb(72,156,203);
 }
 
-.signUp:hover {
+.signUpBtn:hover {
     background-color: rgb(15, 133, 202);
     color: white;
 }
 
-.signIn {
-    width: 200px;
-    height: 40px;
-    border-radius: 7px;
+.footerBtns {
+    display: flex;
+    
+}
+
+.already {
+    background: #fff;
+    color: rgb(161, 161, 161);
+    width: 153px;
+    height: 57px;
+    margin-right: 15px;
+    margin-left: 19px;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:0;
+    border-radius: 10px;
+}
+
+.already:hover {
+    color: black;
+}
+
+.logInBtn {
+    width: 153px;
+    height: 57px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
     background-color: white; 
     color: rgb(72,156,203); 
     border: 2px solid rgb(72,156,203);
 }
 
-.signIn:hover {
+.logInBtn:hover {
     background-color: rgb(72,156,203);
     color: white;
 }
+
+
+
+

@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7a2c2462d.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <div class="all">
-        <div class="firstPageUp">
-            
-        </div>
-        <div class="firstPageDown">
+        <div class="firstPage">
+            <h1 class="create">계정 만들기</h1>
+            <h3 class="createKR"></h3>
             <form>
-                <button class="signUp">Sign up</button>
+                <i class="far fa-user-circle"></i>
+                <input type="text" class="name" placeholder="이름" >
             </form>
             <form>
-                <button class="signIn">Sign in</button>
+                <i class="far fa-envelope"></i>
+                <input type="text" class="email" placeholder="이메일" >
+            </form>
+            <form>
+                <i class="fas fa-lock"></i>
+                <input type="password" class="pw" placeholder="비밀번호" >
+            </form>
+            <form>
+                <button class="signUpBtn">계정 생성</button>
+            </form>
+            <form class="footerBtns">
+                <button class="already">계정이 이미 <br>있으신가요?</button>
+                <button class="logInBtn">로그인</button>
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
