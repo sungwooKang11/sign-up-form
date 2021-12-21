@@ -1,11 +1,14 @@
+body {
 
-
-.all {
-    display: flex;
-    justify-content: center;
 }
 
-.firstPage {
+.all {
+    display: grid;
+    grid-template-columns: 342px;
+    grid-template-rows: 620px;
+}
+
+.firstPageDown {
     width: 342px;
     height: 620px;
     display: flex;
