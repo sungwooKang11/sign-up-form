@@ -2,11 +2,6 @@ input:focus {
     outline:none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .all {
     position: relative;
@@ -40,8 +35,6 @@ input:focus {
 .firstPage.active {
     transform: translateY(550px);
 }
-
-
 
 .create {
     margin: 0;
