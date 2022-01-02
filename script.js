@@ -1,4 +1,4 @@
-let toggle = document.querySelector(".firstPage");
+const toggle = document.querySelector(".firstPage");
 toggle.onclick = function() {
     toggle.classList.toggle("active")
 }
